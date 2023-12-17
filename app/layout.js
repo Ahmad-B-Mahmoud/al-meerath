@@ -16,6 +16,10 @@ import { prefixer } from "stylis";
 
 import CssBaseline from "@mui/material/CssBaseline";
 
+// App Background image
+import backgroundImage from "@/public/images/bg.jpg";
+import Image from "next/image";
+
 const notoFont = Noto_Naskh_Arabic({ subsets: ["arabic"] });
 
 export const metadata = {
@@ -47,14 +51,34 @@ const cacheRtl = createCache({
   stylisPlugins: [prefixer, rtlPlugin],
 });
 
+// Style the background image div:
+const styles = {
+  container: {
+    position: "fixed",
+    width: "100vw",
+    height: "100vh",
+    zIndex: -1, // optional, to make sure the image is behind other elements
+  },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={inter.className}>
+      <body className={notoFont.className}>
         <CacheProvider value={cacheRtl}>
           <AppRouterCacheProvider>
             <ThemeProvider theme={theme}>
               <CssBaseline />
+
+              <div style={styles.container}>
+                <Image
+                  src={backgroundImage}
+                  style={{ objectFit: "cover" }}
+                  fill
+                  alt="background"
+                />
+              </div>
+
               {children}
             </ThemeProvider>
           </AppRouterCacheProvider>
