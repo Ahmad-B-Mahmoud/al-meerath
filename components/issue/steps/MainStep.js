@@ -14,6 +14,7 @@ import Step_02 from "./step_02/Step_02";
 import Step_03 from "./step_03/Step_03";
 import Step_04 from "./step_04/Step_04";
 import Step_05 from "./step_05/Step_05";
+import LastStep from "./lastStep/LastStep";
 
 function MainStep() {
   // Variables:
@@ -52,6 +53,9 @@ function MainStep() {
             </Step>
             <Step>
               <Step_05 />
+            </Step>
+            <Step>
+              <LastStep />
             </Step>
           </Stepper>
         </Box>

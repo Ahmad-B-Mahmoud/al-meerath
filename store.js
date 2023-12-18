@@ -34,6 +34,8 @@ import { uncles } from "./slices/issue/step_05/uncles";
 import { cousins } from "./slices/issue/step_05/cousins";
 import { paternalUncles } from "./slices/issue/step_05/paternalUncles";
 import { paternalCousins } from "./slices/issue/step_05/paternalCousins";
+// Result Slice:
+import { resultSlice } from "./slices/issue/result";
 
 const useStore = create((set) => ({
   // Steps Slice:
@@ -77,6 +79,9 @@ const useStore = create((set) => ({
   ...cousins(set),
   ...paternalUncles(set),
   ...paternalCousins(set),
+
+  // Result :
+  ...resultSlice(set),
 }));
 
 export default useStore;

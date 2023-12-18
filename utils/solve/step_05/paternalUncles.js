@@ -1,0 +1,21 @@
+// paternalUncles Solve:
+import useStore from "@/store";
+
+function paternalUncles() {
+  // Variables:
+  const { paternalUncles, stocksLeft, addHeirsOfConsanguinity } =
+    useStore.getState();
+
+  if (paternalUncles > 0) {
+    addHeirsOfConsanguinity({
+      title: "الأعمام لأب",
+      count: paternalUncles,
+      stocks: stocksLeft,
+      earn: (stocksLeft * amount) / 24,
+      proof:
+        "عَنِ ابْنِ عَبَّاسٍ رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللَّهِ صلّى اللَّهُ عَلَيْهِ وسلّم: أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا، فَمَا بَقِيَ فَهُوَ لِأَوْلَى رَجُلٍ ذَكَرٍ. مُتَّفَقٌ عَلَيْهِ.",
+    });
+  }
+}
+
+export default paternalUncles;
