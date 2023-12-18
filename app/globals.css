@@ -1,0 +1,8 @@
+/** Quran Font*/
+@font-face {
+    font-family: "Quran";
+    src: url("/fonts/HafsSmart_08.ttf") format("truetype");
+  }
+  .quran-font {
+    font-family: "Quran";
+  }
