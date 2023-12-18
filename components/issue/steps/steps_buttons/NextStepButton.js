@@ -4,6 +4,7 @@ import { Button } from "@mui/material";
 import useStore from "@/store";
 import NextPlanSharpIcon from "@mui/icons-material/NextPlanSharp";
 import step_01_Check from "@/utils/stepCheckers/step_01_Check";
+import step_02_Check from "@/utils/stepCheckers/step_02_Check";
 
 function NextStepButton() {
   // Variables:
@@ -13,6 +14,9 @@ function NextStepButton() {
   const handleNext = () => {
     if (activeStep === 0) {
       step_01_Check();
+    }
+    if (activeStep === 1) {
+      step_02_Check();
     }
   };
 

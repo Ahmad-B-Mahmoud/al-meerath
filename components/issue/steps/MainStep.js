@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import useStore from "@/store";
 import Step_01 from "./step_01/Step_01";
+import Step_02 from "./step_02/Step_02";
 
 function MainStep() {
   // Variables:
@@ -36,6 +37,9 @@ function MainStep() {
           <Stepper activeStep={activeStep} orientation="vertical">
             <Step>
               <Step_01 />
+            </Step>
+            <Step>
+              <Step_02 />
             </Step>
           </Stepper>
         </Box>
