@@ -22,11 +22,6 @@ import Image from "next/image";
 
 const notoFont = Noto_Naskh_Arabic({ subsets: ["arabic"] });
 
-export const metadata = {
-  title: "الميراث",
-  description: "حساب التركات حسب الشريعة الإسلامية.",
-};
-
 const theme = createTheme(
   {
     palette: {
@@ -65,8 +60,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body className={notoFont.className}>
-        <CacheProvider value={cacheRtl}>
-          <AppRouterCacheProvider>
+        <AppRouterCacheProvider>
+          <CacheProvider value={cacheRtl}>
             <ThemeProvider theme={theme}>
               <CssBaseline />
 
@@ -81,8 +76,8 @@ export default function RootLayout({ children }) {
 
               {children}
             </ThemeProvider>
-          </AppRouterCacheProvider>
-        </CacheProvider>
+          </CacheProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

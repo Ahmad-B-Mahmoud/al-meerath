@@ -6,3 +6,20 @@
   .quran-font {
     font-family: "Quran";
   }
+
+  .glass-background {
+    border-radius: 20px !important;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2) !important;
+    backdrop-filter: blur(15px) !important; /* blurry effect */
+    background-color: rgba(
+      25,
+      15,
+      7,
+      0.3
+    ) !important; /* semi-transparent white color */
+  }
+  .no-background {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
