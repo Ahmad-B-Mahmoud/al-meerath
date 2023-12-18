@@ -22,6 +22,12 @@ import { motherSideGrandmother } from "./slices/issue/step_03/motherSideGrandmot
 import { wifes } from "./slices/issue/step_03/wifes";
 import { husband } from "./slices/issue/step_03/husband";
 import { generalStepThree } from "./slices/issue/step_03/general";
+// Step_04
+import { brothers } from "./slices/issue/step_04/brothers";
+import { sisters } from "./slices/issue/step_04/sisters";
+import { paternalBrothers } from "./slices/issue/step_04/paternalBrothers";
+import { paternalSisters } from "./slices/issue/step_04/paternalSisters";
+import { maternalSiblings } from "./slices/issue/step_04/maternalSiblings";
 
 const useStore = create((set) => ({
   // Steps Slice:
@@ -51,6 +57,13 @@ const useStore = create((set) => ({
   ...wifes(set),
   ...husband(set),
   ...generalStepThree(set),
+
+  // Step_04:
+  ...brothers(set),
+  ...sisters(set),
+  ...paternalBrothers(set),
+  ...paternalSisters(set),
+  ...maternalSiblings(set),
 }));
 
 export default useStore;
