@@ -7,6 +7,7 @@ import step_01_Check from "@/utils/stepCheckers/step_01_Check";
 import step_02_Check from "@/utils/stepCheckers/step_02_Check";
 import step_03_Check from "@/utils/stepCheckers/step_03_Check";
 import step_04_Check from "@/utils/stepCheckers/step_04_Check";
+import step_05_Check from "@/utils/stepCheckers/step_05_Check";
 
 function NextStepButton() {
   // Variables:
@@ -25,6 +26,9 @@ function NextStepButton() {
     }
     if (activeStep === 3) {
       step_04_Check();
+    }
+    if (activeStep === 4) {
+      step_05_Check();
     }
   };
 
