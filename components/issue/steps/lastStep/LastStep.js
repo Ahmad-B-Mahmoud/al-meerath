@@ -6,26 +6,21 @@ import ArrowBackIosNewSharpIcon from "@mui/icons-material/ArrowBackIosNewSharp";
 import useStore from "@/store";
 import solve from "@/utils/solve/solve";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import calculateAllStocks from "@/utils/solve/calculateAllStocks";
 import calculateStocksLeft from "@/utils/solve/calculateStocksLeft";
 import ResetStepsButton from "../steps_buttons/ResetStepsButton";
-import LoadingButton from "@mui/lab/LoadingButton";
 
 function LastStep() {
   // Variables:
   const goLastActiveStep = useStore((state) => state.goLastActiveStep);
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
 
   // Handlers:
   const handleSolve = () => {
     // handle solve
-    setLoading(true);
     calculateAllStocks();
     calculateStocksLeft();
     solve(router);
-    setLoading(false);
   };
   const handleBack = () => {
     // handle Back
@@ -47,16 +42,14 @@ function LastStep() {
         </Box>
         <Box sx={{ my: 2 }}>
           <div>
-            <LoadingButton
+            <Button
               onClick={handleSolve}
               startIcon={<CalculateIcon />}
-              loading={loading}
-              loadingPosition="start"
               variant="contained"
               sx={{ mt: 1, mr: 1 }}
             >
-              <span>حلّ المسألة الآن</span>
-            </LoadingButton>
+              حلّ المسألة الآن
+            </Button>
             <Button
               variant="outlined"
               onClick={handleBack}
