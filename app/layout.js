@@ -20,6 +20,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import backgroundImage from "@/public/images/bg.jpg";
 import Image from "next/image";
 
+// App Bar
+import ResponsiveAppBar from "@/components/layouts/AppBar";
+
 const notoFont = Noto_Naskh_Arabic({ subsets: ["arabic"] });
 
 const theme = createTheme(
@@ -73,7 +76,7 @@ export default function RootLayout({ children }) {
                   alt="background"
                 />
               </div>
-
+              <ResponsiveAppBar />
               {children}
             </ThemeProvider>
           </CacheProvider>
