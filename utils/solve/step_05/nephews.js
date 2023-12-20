@@ -3,7 +3,8 @@ import useStore from "@/store";
 
 function nephews() {
   // Variables:
-  const { nephews, stocksLeft, addHeirsOfConsanguinity } = useStore.getState();
+  const { nephews, stocksLeft, addHeirsOfConsanguinity, amount } =
+    useStore.getState();
 
   if (nephews > 0) {
     addHeirsOfConsanguinity({
