@@ -1,26 +1,23 @@
-"use client";
+// Home Page
 import {
   Container,
   Grid,
   Card,
   CardContent,
   CardActions,
-  Button,
   Typography,
 } from "@mui/material";
 import Icon from "@/public/images/icon.png";
 import Image from "next/image";
-import CalculateIcon from "@mui/icons-material/Calculate";
-import { useRouter } from "next/navigation";
+import NewIssueButton from "@/components/home/NewIssueButton";
+
+export const metadata = {
+  title: "الميراث | حلّ مسائل مواريث",
+  description:
+    "حلّ مسائل المواريث حسب أحكام الشريعة الإسلامية على المذهبين الحنفي و الشافعي.",
+};
 
 function Home() {
-  // Variables
-  const router = useRouter();
-
-  // Handlers
-  const handleClick = () => {
-    router.push("/issue");
-  };
   return (
     <>
       <Container maxWidth="md" className="glass-background">
@@ -47,19 +44,12 @@ function Home() {
                 >
                   الميراث
                 </Typography>
-                <Typography variant="h4" sx={{ textShadow: "2px 2px #000" }}>
+                <Typography variant="h5" sx={{ textShadow: "2px 2px #000" }}>
                   حلّ مسائل المواريث حسب أحكام الشريعة الإسلامية على المذهبين
                   الحنفي و الشافعي.
                 </Typography>
                 <CardActions sx={{ mt: 2 }}>
-                  <Button
-                    onClick={handleClick}
-                    startIcon={<CalculateIcon />}
-                    variant="contained"
-                    size="large"
-                  >
-                    البدء بحلّ مسألة مواريث
-                  </Button>
+                  <NewIssueButton />
                 </CardActions>
               </CardContent>
             </Card>
