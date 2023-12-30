@@ -49,7 +49,12 @@ function ResponsiveAppBar() {
           <Toolbar>
             <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
               <Image src={AppIcon} alt="App Icon" width={80} />
-              <Button variant="text" onClick={() => router.push("/")}>
+              <Button
+                variant="text"
+                onClick={() => router.push("/")}
+                size="large"
+                sx={{ textShadow: "2px 2px #000" }}
+              >
                 الميراث
               </Button>
             </Box>
