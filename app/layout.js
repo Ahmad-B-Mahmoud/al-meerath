@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
           href="/icons/safari-pinned-tab.svg"
           color="#85624c"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/icons/favicon.ico" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="الميراث" />
         <meta
@@ -100,6 +100,10 @@ export default function RootLayout({ children }) {
         <meta property="og:site_name" content="الميراث" />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta property="og:image" content="https://yourdomain.com/icon.png" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        />
       </head>
       <body className={notoFont.className}>
         <AppRouterCacheProvider>

@@ -1,3 +1,4 @@
+"use client";
 import * as React from "react";
 import { Chip, Box } from "@mui/material";
 import SaveIcon from "@mui/icons-material/Save";
