@@ -3,6 +3,7 @@
 // PWA Support:
 const withPWA = require("next-pwa")({
   dest: "public",
+  disable: true,
 });
 
 const nextConfig = {};
