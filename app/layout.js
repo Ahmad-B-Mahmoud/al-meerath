@@ -62,49 +62,6 @@ const styles = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
-      <head>
-        <meta name="application-name" content="الميراث" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="الميراث" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="msapplication-TileColor" content="#85624c" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="theme-color" content="#FFD700" />
-        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/icons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/icons/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/manifest.json" />
-        <link
-          rel="mask-icon"
-          href="/icons/safari-pinned-tab.svg"
-          color="#85624c"
-        />
-        <link rel="shortcut icon" href="/icons/favicon.ico" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="الميراث" />
-        <meta
-          property="og:description"
-          content="حلّ مسائل المواريث حسب أحكام الشريعة الإسلامية على المذهبين الحنفي و الشافعي."
-        />
-        <meta property="og:site_name" content="الميراث" />
-        <meta property="og:url" content="https://yourdomain.com" />
-        <meta property="og:image" content="https://yourdomain.com/icon.png" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
-        />
-      </head>
       <body className={notoFont.className}>
         <AppRouterCacheProvider>
           <CacheProvider value={cacheRtl}>
