@@ -117,7 +117,6 @@ function ProofSection() {
               borderRadius: "1rem",
             }}
             alt="a Logo for Mohammad name."
-            blurDataURL="data:..."
             placeholder="blur"
           />
         </Grid>
