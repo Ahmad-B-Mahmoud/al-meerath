@@ -15,7 +15,6 @@ function TermsSection() {
             borderRadius: "1rem",
           }}
           alt="a todo-list image"
-          blurDataURL="data:..."
           placeholder="blur"
         />
       </Grid>

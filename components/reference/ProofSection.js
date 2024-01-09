@@ -17,7 +17,6 @@ function ProofSection() {
               borderRadius: "1rem",
             }}
             alt="Quran image"
-            blurDataURL="data:..."
             placeholder="blur"
           />
         </Grid>

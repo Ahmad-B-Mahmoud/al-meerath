@@ -15,7 +15,6 @@ function Header() {
             borderRadius: "1rem",
           }}
           alt="a book image"
-          blurDataURL="data:..."
           placeholder="blur"
         />
       </Grid>

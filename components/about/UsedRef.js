@@ -15,7 +15,6 @@ function UsedRef() {
             borderRadius: "1rem",
           }}
           alt="a reference image book."
-          blurDataURL="data:..."
           placeholder="blur"
         />
       </Grid>

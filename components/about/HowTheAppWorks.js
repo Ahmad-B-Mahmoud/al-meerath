@@ -15,7 +15,6 @@ function HowTheAppWorks() {
             borderRadius: "1rem",
           }}
           alt="an image of how the app works."
-          blurDataURL="data:..."
           placeholder="blur"
         />
       </Grid>

@@ -15,7 +15,6 @@ function RestrictionsSection() {
             borderRadius: "1rem",
           }}
           alt="restrictions image."
-          blurDataURL="data:..."
           placeholder="blur"
         />
       </Grid>

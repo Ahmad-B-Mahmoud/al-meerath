@@ -18,7 +18,6 @@ function NotesAboutTheApp() {
               borderRadius: "1rem",
             }}
             alt="to-do-List image"
-            blurDataURL="data:..."
             placeholder="blur"
           />
           <CardContent>

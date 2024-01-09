@@ -17,7 +17,6 @@ function HeirsSection() {
               borderRadius: "1rem",
             }}
             alt="heirs pie Chart image."
-            blurDataURL="data:..."
             placeholder="blur"
           />
         </Grid>
@@ -67,7 +66,6 @@ function HeirsSection() {
               borderRadius: "1rem",
             }}
             alt="League of heirs."
-            blurDataURL="data:..."
             placeholder="blur"
           />
         </Grid>
