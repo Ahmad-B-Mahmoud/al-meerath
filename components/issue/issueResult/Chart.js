@@ -30,7 +30,7 @@ export default class Chart extends PureComponent {
             {data.map((heir, index) => (
               <Cell
                 key={`cell-${index}`}
-                fill={this.props.heirTitle == heir.name ? "#F5D704" : "#757575"}
+                fill={this.props.heirTitle == heir.name ? "#F5D704" : "#3B1E08"}
               />
             ))}
           </Pie>

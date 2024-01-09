@@ -16,7 +16,9 @@ function ProofSection() {
               height: "auto",
               borderRadius: "1rem",
             }}
-            alt="a book image"
+            alt="Quran image"
+            blurDataURL="data:..."
+            placeholder="blur"
           />
         </Grid>
         <Grid item sm={8}>
@@ -115,7 +117,9 @@ function ProofSection() {
               height: "auto",
               borderRadius: "1rem",
             }}
-            alt="a book image"
+            alt="a Logo for Mohammad name."
+            blurDataURL="data:..."
+            placeholder="blur"
           />
         </Grid>
         <Grid item sm={8}>

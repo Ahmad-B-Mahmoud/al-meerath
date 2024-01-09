@@ -62,6 +62,40 @@ const styles = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
+      <head>
+        <meta name="application-name" content="الميراث" />
+        <meta name="theme-color" content="#FFD700" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/images/icons/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/images/icons/favicon-16x16.png"
+        />
+        <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link
+          rel="apple-touch-icon"
+          href="/images/icons/apple-touch-icon.png"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="الميراث" />
+        <meta
+          property="og:description"
+          content="حساب التركات حسب الشريعة الإسلامية على المذهبين الحنفي و الشافعي."
+        />
+        <meta property="og:site_name" content="الميراث" />
+        <meta property="og:url" content="https://al-meerath.vercel.app" />
+        <meta
+          property="og:image"
+          content="https://al-meerath.vercel.app/images/icons/apple-touch-icon.png"
+        />
+      </head>
       <body className={notoFont.className}>
         <AppRouterCacheProvider>
           <CacheProvider value={cacheRtl}>

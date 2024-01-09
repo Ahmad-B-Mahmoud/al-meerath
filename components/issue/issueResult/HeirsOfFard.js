@@ -61,7 +61,7 @@ function HeirsOfFard() {
                 <List>
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <PaidIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>
@@ -89,7 +89,7 @@ function HeirsOfFard() {
                   {heir.count > 1 ? (
                     <ListItem>
                       <ListItemAvatar>
-                        <Avatar>
+                        <Avatar sx={{ bgcolor: "#3B1E08" }}>
                           <PaidIcon color="primary" />
                         </Avatar>
                       </ListItemAvatar>
@@ -110,7 +110,7 @@ function HeirsOfFard() {
                   {heir.count > 1 ? (
                     <ListItem>
                       <ListItemAvatar>
-                        <Avatar>
+                        <Avatar sx={{ bgcolor: "#3B1E08" }}>
                           <GroupsIcon color="primary" />
                         </Avatar>
                       </ListItemAvatar>
@@ -119,7 +119,7 @@ function HeirsOfFard() {
                   ) : null}
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <PieChartIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>
@@ -127,7 +127,7 @@ function HeirsOfFard() {
                   </ListItem>
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <ShowChartIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>
@@ -135,7 +135,7 @@ function HeirsOfFard() {
                   </ListItem>
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <BookIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>

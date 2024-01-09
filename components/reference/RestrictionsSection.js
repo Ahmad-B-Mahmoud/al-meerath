@@ -14,7 +14,9 @@ function RestrictionsSection() {
             height: "auto",
             borderRadius: "1rem",
           }}
-          alt="a book image"
+          alt="restrictions image."
+          blurDataURL="data:..."
+          placeholder="blur"
         />
       </Grid>
       <Grid item sm={7}>

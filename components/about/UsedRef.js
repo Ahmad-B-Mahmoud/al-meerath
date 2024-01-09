@@ -14,7 +14,9 @@ function UsedRef() {
             height: "auto",
             borderRadius: "1rem",
           }}
-          alt="a book image"
+          alt="a reference image book."
+          blurDataURL="data:..."
+          placeholder="blur"
         />
       </Grid>
       <Grid item sm={7}>

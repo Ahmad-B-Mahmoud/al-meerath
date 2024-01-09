@@ -57,7 +57,7 @@ function HeirsOfConsanguinity() {
                 <List>
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <PaidIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>
@@ -73,7 +73,7 @@ function HeirsOfConsanguinity() {
                   {heir.count > 1 ? (
                     <ListItem>
                       <ListItemAvatar>
-                        <Avatar>
+                        <Avatar sx={{ bgcolor: "#3B1E08" }}>
                           <PaidIcon color="primary" />
                         </Avatar>
                       </ListItemAvatar>
@@ -90,7 +90,7 @@ function HeirsOfConsanguinity() {
                   {heir.count > 1 ? (
                     <ListItem>
                       <ListItemAvatar>
-                        <Avatar>
+                        <Avatar sx={{ bgcolor: "#3B1E08" }}>
                           <GroupsIcon color="primary" />
                         </Avatar>
                       </ListItemAvatar>
@@ -99,7 +99,7 @@ function HeirsOfConsanguinity() {
                   ) : null}
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <ShowChartIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>
@@ -110,7 +110,7 @@ function HeirsOfConsanguinity() {
                   </ListItem>
                   <ListItem>
                     <ListItemAvatar>
-                      <Avatar>
+                      <Avatar sx={{ bgcolor: "#3B1E08" }}>
                         <BookIcon color="primary" />
                       </Avatar>
                     </ListItemAvatar>

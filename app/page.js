@@ -32,6 +32,8 @@ function Home() {
                 borderRadius: "1rem",
               }}
               alt="Web app Icon"
+              blurDataURL="data:..."
+              placeholder="blur"
             />
           </Grid>
           <Grid item sm={6}>

@@ -14,7 +14,9 @@ function TermsSection() {
             height: "auto",
             borderRadius: "1rem",
           }}
-          alt="a book image"
+          alt="a todo-list image"
+          blurDataURL="data:..."
+          placeholder="blur"
         />
       </Grid>
       <Grid item sm={7}>

@@ -17,7 +17,9 @@ function NotesAboutTheApp() {
               height: "auto",
               borderRadius: "1rem",
             }}
-            alt="a book image"
+            alt="to-do-List image"
+            blurDataURL="data:..."
+            placeholder="blur"
           />
           <CardContent>
             <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
@@ -37,7 +39,9 @@ function NotesAboutTheApp() {
               height: "auto",
               borderRadius: "1rem",
             }}
-            alt="a book image"
+            alt="no internet connection image."
+            blurDataURL="data:..."
+            placeholder="blur"
           />
           <CardContent>
             <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
@@ -57,7 +61,9 @@ function NotesAboutTheApp() {
               height: "auto",
               borderRadius: "1rem",
             }}
-            alt="a book image"
+            alt="non profit image."
+            blurDataURL="data:..."
+            placeholder="blur"
           />
           <CardContent>
             <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>

@@ -14,7 +14,9 @@ function HowTheAppWorks() {
             height: "auto",
             borderRadius: "1rem",
           }}
-          alt="a book image"
+          alt="an image of how the app works."
+          blurDataURL="data:..."
+          placeholder="blur"
         />
       </Grid>
       <Grid item sm={8}>
