@@ -34,6 +34,7 @@ function resetIssueStore() {
     resetSisters,
     resetCousins,
     resetNephews,
+    resetPaternalNephews,
     resetPaternalCousins,
     resetPaternalUncles,
     resetUncles,
@@ -76,6 +77,7 @@ function resetIssueStore() {
   resetSisters();
   resetCousins();
   resetNephews();
+  resetPaternalNephews();
   resetPaternalCousins();
   resetPaternalUncles();
   resetUncles();

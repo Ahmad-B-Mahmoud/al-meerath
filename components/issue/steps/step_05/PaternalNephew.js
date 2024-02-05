@@ -1,13 +1,13 @@
-/** Nephews Select Input Type Number. */
+/** Paternal Nephews Select Input Type Number. */
 "use client";
 import { TextField } from "@mui/material";
 import useStore from "@/store";
 
-function Nephews() {
+function PaternalNephews() {
   // Variables:
-  const nephews = useStore((state) => state.nephews);
-  const setNephews = useStore((state) => state.setNephews);
   const paternalNephews = useStore((state) => state.paternalNephews);
+  const setPaternalNephews = useStore((state) => state.setPaternalNephews);
+  const nephews = useStore((state) => state.nephews);
   const uncles = useStore((state) => state.uncles);
   const cousins = useStore((state) => state.cousins);
   const paternalUncles = useStore((state) => state.paternalUncles);
@@ -16,16 +16,16 @@ function Nephews() {
   // Handlers:
   const handleChange = (e) => {
     const input = e.target.value;
-    input >= 0 ? setNephews(input) : null;
+    input >= 0 ? setPaternalNephews(input) : null;
   };
 
   return (
     <TextField
       type="number"
-      label="أبناء الأخوة"
-      value={nephews}
+      label="أبناء الأخوة لأب"
+      value={paternalNephews}
       disabled={
-        paternalNephews > 0 ||
+        nephews > 0 ||
         uncles > 0 ||
         cousins > 0 ||
         paternalUncles > 0 ||
@@ -33,9 +33,10 @@ function Nephews() {
           ? true
           : false
       }
+      helperText={nephews > 0 ? "محجوبون لوجود أبناء الإخوة." : null}
       onChange={handleChange}
     />
   );
 }
 
-export default Nephews;
+export default PaternalNephews;

@@ -4,10 +4,16 @@ import useStore from "@/store";
 
 function paternalSisters() {
   // Variables:
-  const { paternalSisters, paternalBrothers, sisters, addHeirsOfFard, amount } =
-    useStore.getState();
+  const {
+    paternalSisters,
+    paternalBrothers,
+    sisters,
+    addHeirsOfFard,
+    amount,
+    hasFemaleDescendants,
+  } = useStore.getState();
 
-  if (paternalSisters > 0 && paternalBrothers == 0) {
+  if (paternalSisters > 0 && paternalBrothers == 0 && !hasFemaleDescendants) {
     // Has only paternalSisters without paternalBrothers
     if (paternalSisters == 1 && sisters == 0) {
       // Only One paternalSisters

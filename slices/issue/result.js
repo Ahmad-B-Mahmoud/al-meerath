@@ -23,6 +23,12 @@ export const resultSlice = (set) => ({
       heirsOfFard: [...state.heirsOfFard, heir],
     })),
   editHeirsOfFard: (heirs) => set(() => ({ heirsOfFard: [...heirs] })),
+  removeHeirOfFard: (title) =>
+    set((state) => ({
+      heirsOfFard: state.heirsOfFard.filter((heirOfFard) => {
+        return heirOfFard.title != title;
+      }),
+    })),
   resetHeirsOfFard: () => set(() => ({ heirsOfFard: [] })),
 
   issueNote: "",

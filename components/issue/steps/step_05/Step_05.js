@@ -5,6 +5,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import NextStepButton from "../steps_buttons/NextStepButton";
 import PreviousStepButton from "../steps_buttons/PreviousStepButton";
 import Nephews from "./Nephews";
+import PaternalNephews from "./PaternalNephew";
 import Uncles from "./Uncles";
 import Cousins from "./Cousins";
 import PaternalUncles from "./PaternalUncles";
@@ -23,6 +24,9 @@ function Step_05() {
           <Grid container spacing={4} rowGap={1} my={2}>
             <Grid sm={5}>
               <Nephews />
+            </Grid>
+            <Grid sm={5}>
+              <PaternalNephews />
             </Grid>
           </Grid>
           <Grid container spacing={4} rowGap={1} mb={2}>

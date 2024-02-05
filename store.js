@@ -30,6 +30,7 @@ import { paternalSisters } from "./slices/issue/step_04/paternalSisters";
 import { maternalSiblings } from "./slices/issue/step_04/maternalSiblings";
 // Step_05
 import { nephews } from "./slices/issue/step_05/nephews";
+import { paternalNephews } from "./slices/issue/step_05/paternalNephews";
 import { uncles } from "./slices/issue/step_05/uncles";
 import { cousins } from "./slices/issue/step_05/cousins";
 import { paternalUncles } from "./slices/issue/step_05/paternalUncles";
@@ -75,6 +76,7 @@ const useStore = create((set) => ({
 
   // Step_05:
   ...nephews(set),
+  ...paternalNephews(set),
   ...uncles(set),
   ...cousins(set),
   ...paternalUncles(set),

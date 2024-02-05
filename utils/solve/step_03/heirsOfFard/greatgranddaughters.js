@@ -10,6 +10,7 @@ function greatgranddaughters() {
     daughters,
     granddaughters,
     addHeirsOfFard,
+    amount,
   } = useStore.getState();
 
   if (greatgranddaughters > 0 && greatgrandsons == 0) {

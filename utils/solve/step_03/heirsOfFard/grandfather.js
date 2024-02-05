@@ -11,7 +11,7 @@ function grandfather() {
     if (grandfather) {
       if (hasDescendants) {
         addHeirsOfFard({
-          title: "الجَدّ",
+          title: "الجد أبو الأب",
           count: 1,
           cut: "السدس",
           stocks: 4,

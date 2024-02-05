@@ -56,7 +56,7 @@ function Info() {
       </Grid>
       {issueNote != "" ? (
         <Grid>
-          <Alert severity="info">
+          <Alert severity="info" className="glass-background">
             <AlertTitle>ملاحظة عن المسألة:</AlertTitle>
             {issueNote}
           </Alert>

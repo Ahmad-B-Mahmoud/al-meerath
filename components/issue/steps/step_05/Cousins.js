@@ -8,6 +8,7 @@ function Cousins() {
   const cousins = useStore((state) => state.cousins);
   const setCousins = useStore((state) => state.setCousins);
   const nephews = useStore((state) => state.nephews);
+  const paternalNephews = useStore((state) => state.paternalNephews);
   const uncles = useStore((state) => state.uncles);
   const paternalUncles = useStore((state) => state.paternalUncles);
   const paternalCousins = useStore((state) => state.paternalCousins);
@@ -24,13 +25,19 @@ function Cousins() {
       label="أبناء الأعمام الأشقاء"
       value={cousins}
       disabled={
-        nephews > 0 || uncles > 0 || paternalUncles > 0 || paternalCousins > 0
+        nephews > 0 ||
+        paternalNephews > 0 ||
+        uncles > 0 ||
+        paternalUncles > 0 ||
+        paternalCousins > 0
           ? true
           : false
       }
       helperText={
         nephews > 0
           ? "محجوبون لوجود أبناء الإخوة."
+          : paternalNephews > 0
+          ? "محجوبون لوجود أبناء الإخوة لأب."
           : uncles > 0
           ? "محجوبون لوجود الأعمام الأشقاء."
           : null

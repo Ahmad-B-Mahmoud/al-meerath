@@ -37,10 +37,10 @@ function HeirsOfConsanguinity() {
       </Typography>
       {allHeirsOfConsanguinity.length === 0 ? (
         <Typography
-          variant="body"
+          variant="h6"
           fontWeight="bold"
-          gutterBottom
           textAlign="center"
+          gutterBottom
         >
           لا يوجد ورثة من أصحاب العصبات.
         </Typography>
@@ -105,7 +105,11 @@ function HeirsOfConsanguinity() {
                     </ListItemAvatar>
                     <ListItemText
                       primary="الأسهم"
-                      secondary={heir.stocks.toFixed(2)}
+                      secondary={
+                        Number.isInteger(heir.stocks)
+                          ? heir.stocks
+                          : heir.stocks.toFixed(2)
+                      }
                     />
                   </ListItem>
                   <ListItem>

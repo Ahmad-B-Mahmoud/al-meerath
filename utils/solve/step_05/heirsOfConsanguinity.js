@@ -1,6 +1,7 @@
 // Step Five heirs Of Consanguinity:
 
 import nephews from "./nephews";
+import paternalNephews from "./paternalNephews";
 import uncles from "./uncles";
 import cousins from "./cousins";
 import paternalUncles from "./paternalUncles";
@@ -10,6 +11,9 @@ function heirsOfConsanguinity_05() {
   /** --- Heirs of Consanguinity: --- */
   /** Nephews: */
   nephews();
+
+  /** Paternal Nephews: */
+  paternalNephews();
 
   /** Uncles: */
   uncles();

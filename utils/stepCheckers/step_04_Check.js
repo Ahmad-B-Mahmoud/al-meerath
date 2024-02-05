@@ -9,6 +9,9 @@ function step_04_Check() {
     brothers,
     paternalBrothers,
     grandfather,
+    hasFemaleDescendants,
+    sisters,
+    paternalSisters,
     goNextStep,
     goLastStep,
     setLastActiveStep,
@@ -17,7 +20,13 @@ function step_04_Check() {
   // solve heirs of Fard:
   heirsOfFard();
 
-  if (brothers > 0 || paternalBrothers > 0 || grandfather) {
+  if (
+    brothers > 0 ||
+    paternalBrothers > 0 ||
+    grandfather ||
+    (hasFemaleDescendants && sisters > 0) ||
+    (hasFemaleDescendants && paternalSisters) > 0
+  ) {
     // Then Go to Last Step.
     setLastActiveStep(3);
     goLastStep();

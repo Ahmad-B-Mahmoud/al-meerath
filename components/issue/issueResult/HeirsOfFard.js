@@ -25,6 +25,7 @@ function HeirsOfFard() {
   // Variables:
   const heirsOfFard = useStore((state) => state.heirsOfFard);
   const issueType = useStore((state) => state.issueType);
+  const gender = useStore((state) => state.gender);
 
   // Check for Issue Type:
   useEffect(() => {
@@ -44,7 +45,7 @@ function HeirsOfFard() {
         الورثة من أصحاب الفروض
       </Typography>
       {heirsOfFard.length === 0 ? (
-        <Typography variant="body" fontWeight="bold" gutterBottom>
+        <Typography variant="h6" fontWeight="bold" gutterBottom>
           لا يوجد ورثة من أصحاب الفروض.
         </Typography>
       ) : null}
@@ -69,7 +70,8 @@ function HeirsOfFard() {
                       primary="قيمة الإرث"
                       secondary={
                         issueType === "رديّة" &&
-                        (heir.title != "الزوجات" || heir.title != "الزوج")
+                        ((heir.title != "الزوجات" && gender == "male") ||
+                          (heir.title != "الزوج" && gender == "female"))
                           ? Number.isInteger(heir.earn) &&
                             Number.isInteger(heir.rEarn)
                             ? heir.earn +
@@ -96,7 +98,9 @@ function HeirsOfFard() {
                       <ListItemText
                         primary="نصيب الفرد"
                         secondary={
-                          issueType === "رديّة"
+                          issueType === "رديّة" &&
+                          ((heir.title != "الزوجات" && gender == "male") ||
+                            (heir.title != "الزوج" && gender == "female"))
                             ? Number.isInteger(heir.rEarn / heir.count)
                               ? heir.rEarn / heir.count
                               : (heir.rEarn / heir.count).toFixed(2)
