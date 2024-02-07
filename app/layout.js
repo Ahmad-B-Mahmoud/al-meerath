@@ -23,6 +23,9 @@ import Image from "next/image";
 // App Bar
 import ResponsiveAppBar from "@/components/layouts/AppBar";
 
+// App Footer:
+import Footer from "@/components/layouts/Footer";
+
 const notoFont = Noto_Naskh_Arabic({ subsets: ["arabic"] });
 
 const theme = createTheme(
@@ -112,6 +115,7 @@ export default function RootLayout({ children }) {
               </div>
               <ResponsiveAppBar />
               {children}
+              <Footer />
             </ThemeProvider>
           </CacheProvider>
         </AppRouterCacheProvider>
