@@ -1,6 +1,6 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
-import BookImage from "@/public/images/reference/book.png";
+import BookImage from "@/public/images/reference/book.webp";
 
 function Header() {
   return (

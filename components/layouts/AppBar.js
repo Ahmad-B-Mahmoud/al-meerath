@@ -9,7 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import AppIcon from "@/public/images/icon.png";
+import AppIcon from "@/public/images/icon.webp";
 import Image from "next/image";
 import CalculateIcon from "@mui/icons-material/Calculate";
 import { useRouter } from "next/navigation";
@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
     <>
       <CssBaseline />
       <Container maxWidth="md" sx={{ mb: 4 }}>
-        <AppBar position="static" className="glass-background">
+        <AppBar position="relative" className="glass-background">
           <Toolbar>
             <Box sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}>
               <Image src={AppIcon} alt="App Icon" width={80} />

@@ -1,5 +1,5 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
-import islamic_todo from "@/public/images/reference/islamic_todo.png";
+import islamic_todo from "@/public/images/reference/islamic_todo.webp";
 import Image from "next/image";
 
 function TermsSection() {

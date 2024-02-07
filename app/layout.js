@@ -17,7 +17,7 @@ import { prefixer } from "stylis";
 import CssBaseline from "@mui/material/CssBaseline";
 
 // App Background image
-import backgroundImage from "@/public/images/bg.jpg";
+import backgroundImage from "@/public/images/bg.webp";
 import Image from "next/image";
 
 // App Bar

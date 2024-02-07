@@ -1,5 +1,5 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
-import restrictions from "@/public/images/reference/restrictions.png";
+import restrictions from "@/public/images/reference/restrictions.webp";
 import Image from "next/image";
 
 function RestrictionsSection() {

@@ -7,7 +7,7 @@ import {
   CardActions,
   Typography,
 } from "@mui/material";
-import Icon from "@/public/images/icon.png";
+import Icon from "@/public/images/icon.webp";
 import Image from "next/image";
 import NewIssueButton from "@/components/home/NewIssueButton";
 

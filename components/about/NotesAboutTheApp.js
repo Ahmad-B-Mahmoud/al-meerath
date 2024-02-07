@@ -1,8 +1,8 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
-import DeviceImage from "@/public/images/about/device.png";
-import NoConnectionImage from "@/public/images/about/noConnection.png";
-import NonProfitImage from "@/public/images/about/nonProfit.png";
+import DeviceImage from "@/public/images/about/device.webp";
+import NoConnectionImage from "@/public/images/about/noConnection.webp";
+import NonProfitImage from "@/public/images/about/nonProfit.webp";
 
 function NotesAboutTheApp() {
   return (

@@ -1,7 +1,7 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
-import pieChart from "@/public/images/reference/pieChart.png";
+import pieChart from "@/public/images/reference/pieChart.webp";
 import Image from "next/image";
-import leagueImage from "@/public/images/reference/league.png";
+import leagueImage from "@/public/images/reference/league.webp";
 
 function HeirsSection() {
   return (

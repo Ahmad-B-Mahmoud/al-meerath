@@ -1,6 +1,6 @@
 import { Card, CardContent, Typography, Grid } from "@mui/material";
-import QuranImage from "@/public/images/reference/Quran.png";
-import prophet_Mohammad from "@/public/images/reference/prophet_Mohammad.png";
+import QuranImage from "@/public/images/reference/Quran.webp";
+import prophet_Mohammad from "@/public/images/reference/prophet_Mohammad.webp";
 import Image from "next/image";
 
 function ProofSection() {

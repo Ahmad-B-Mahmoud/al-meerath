@@ -1,6 +1,6 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import Image from "next/image";
-import HowTheAppWorksImage from "@/public/images/about/howTheAppWork.png";
+import HowTheAppWorksImage from "@/public/images/about/howTheAppWork.webp";
 
 function HowTheAppWorks() {
   return (

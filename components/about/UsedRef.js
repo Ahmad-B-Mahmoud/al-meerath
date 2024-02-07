@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BookImage from "@/public/images/about/refBook.png";
+import BookImage from "@/public/images/about/refBook.webp";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 
 function UsedRef() {
