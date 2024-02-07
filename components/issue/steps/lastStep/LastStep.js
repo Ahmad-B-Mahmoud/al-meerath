@@ -41,25 +41,23 @@ function LastStep() {
           </Typography>
         </Box>
         <Box sx={{ my: 2 }}>
-          <div>
-            <Button
-              onClick={handleSolve}
-              startIcon={<CalculateIcon />}
-              variant="contained"
-              sx={{ mt: 1, mr: 1 }}
-            >
-              حلّ المسألة الآن
-            </Button>
-            <Button
-              variant="outlined"
-              onClick={handleBack}
-              sx={{ mt: 1, mr: 1 }}
-              endIcon={<ArrowBackIosNewSharpIcon />}
-            >
-              رجوع للخطوة السابقة
-            </Button>
-            <ResetStepsButton />
-          </div>
+          <Button
+            onClick={handleSolve}
+            startIcon={<CalculateIcon />}
+            variant="contained"
+            sx={{ mt: 1, mr: 1 }}
+          >
+            حلّ المسألة الآن
+          </Button>
+          <Button
+            variant="outlined"
+            onClick={handleBack}
+            sx={{ mt: 1, mr: 1 }}
+            endIcon={<ArrowBackIosNewSharpIcon />}
+          >
+            رجوع للخلف
+          </Button>
+          <ResetStepsButton />
         </Box>
       </StepContent>
     </>

@@ -17,7 +17,7 @@ function PreviousStepButton() {
       sx={{ mt: 1, mr: 1 }}
       endIcon={<ArrowBackIosNewSharpIcon />}
     >
-      رجوع للخطوة السابقة
+      رجوع للخلف
     </Button>
   );
 }
