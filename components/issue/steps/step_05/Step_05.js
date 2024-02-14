@@ -22,26 +22,26 @@ function Step_05() {
       <StepContent>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={4} rowGap={1} my={2}>
-            <Grid sm={5}>
+            <Grid xs={6} sm={5}>
               <Nephews />
             </Grid>
-            <Grid sm={5}>
+            <Grid xs={6} sm={5}>
               <PaternalNephews />
             </Grid>
           </Grid>
           <Grid container spacing={4} rowGap={1} mb={2}>
-            <Grid sm={5}>
+            <Grid xs={6} sm={5}>
               <Uncles />
             </Grid>
-            <Grid sm={5}>
+            <Grid xs={6} sm={5}>
               <Cousins />
             </Grid>
           </Grid>
           <Grid container spacing={4} rowGap={1} mb={2}>
-            <Grid sm={5}>
+            <Grid xs={6} sm={5}>
               <PaternalUncles />
             </Grid>
-            <Grid sm={5}>
+            <Grid xs={6} sm={5}>
               <PaternalCousins />
             </Grid>
           </Grid>
