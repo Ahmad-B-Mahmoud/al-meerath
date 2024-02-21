@@ -13,7 +13,6 @@ import AppIcon from "@/public/images/icon.webp";
 import Image from "next/image";
 import CalculateIcon from "@mui/icons-material/Calculate";
 import { useRouter } from "next/navigation";
-import { CssBaseline } from "@mui/material";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import InfoIcon from "@mui/icons-material/Info";
 
@@ -43,7 +42,6 @@ function ResponsiveAppBar() {
 
   return (
     <>
-      <CssBaseline />
       <Container maxWidth="md" sx={{ mb: 4 }}>
         <AppBar position="relative" className="glass-background">
           <Toolbar>
