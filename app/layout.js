@@ -23,6 +23,9 @@ import Image from "next/image";
 // App Bar
 import ResponsiveAppBar from "@/components/layouts/AppBar";
 
+// Pre-Loader for the App:
+import PreLoader from "@/components/layouts/PreLoader";
+
 // App Footer:
 import Footer from "@/components/layouts/Footer";
 
@@ -104,7 +107,6 @@ export default function RootLayout({ children }) {
           <CacheProvider value={cacheRtl}>
             <ThemeProvider theme={theme}>
               <CssBaseline />
-
               <div style={styles.container}>
                 <Image
                   src={backgroundImage}
@@ -119,6 +121,7 @@ export default function RootLayout({ children }) {
             </ThemeProvider>
           </CacheProvider>
         </AppRouterCacheProvider>
+        <PreLoader />
       </body>
     </html>
   );

@@ -1,25 +1,28 @@
-// Loading page
 "use client";
-import { Box } from "@mui/material";
+import { Backdrop, Box } from "@mui/material";
 import Image from "next/image";
-import LoadingGif from "@/public/images/loading1.gif";
+import AppIcon from "@/public/images/icon.webp";
+import CircularProgress from "@mui/material/CircularProgress";
 
-function loading() {
+export default function Loading() {
   return (
-    <>
-      <Box
-        sx={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-        }}
-        className="glass-background"
+    <div>
+      <Backdrop
+        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open
       >
-        <Image src={LoadingGif} width={300} alt="Loading Gif Icon" />
-      </Box>
-    </>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image src={AppIcon} width={300} alt="Al-Meerath App Logo." />
+          <CircularProgress color="primary" />
+        </Box>
+      </Backdrop>
+    </div>
   );
 }
-
-export default loading;
