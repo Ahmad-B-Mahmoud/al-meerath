@@ -5,7 +5,6 @@ import Container from "@mui/material/Container";
 import { IconButton, Tooltip } from "@mui/material";
 import FacebookTwoToneIcon from "@mui/icons-material/FacebookTwoTone";
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import GetAppRoundedIcon from "@mui/icons-material/GetAppRounded";
 import BugReportRoundedIcon from "@mui/icons-material/BugReportRounded";
 
 function Copyright() {
@@ -44,11 +43,6 @@ export default function Footer() {
             <Tooltip title="تواصل معنا">
               <IconButton aria-label="E-mail Contact">
                 <EmailRoundedIcon color="primary" />
-              </IconButton>
-            </Tooltip>
-            <Tooltip title="تثبيت التطبيق">
-              <IconButton aria-label="Install the App">
-                <GetAppRoundedIcon color="primary" />
               </IconButton>
             </Tooltip>
             <Tooltip title="تبليغ عن خطأ بحلّ المسائل">

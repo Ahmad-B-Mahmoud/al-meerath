@@ -15,6 +15,7 @@ import CalculateIcon from "@mui/icons-material/Calculate";
 import { useRouter } from "next/navigation";
 import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import InfoIcon from "@mui/icons-material/Info";
+import InstallTheAppButton from "./InstallTheAppButton";
 
 const pages = [
   { text: "مسألة جديدة", path: "/issue", icon: <CalculateIcon /> },
@@ -60,7 +61,7 @@ function ResponsiveAppBar() {
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
                 size="large"
-                aria-label="account of current user"
+                aria-label="Menu for the app."
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
@@ -97,6 +98,9 @@ function ResponsiveAppBar() {
                     </Typography>
                   </MenuItem>
                 ))}
+                <MenuItem>
+                  <InstallTheAppButton />
+                </MenuItem>
               </Menu>
             </Box>
             <Box
@@ -133,6 +137,7 @@ function ResponsiveAppBar() {
                   </Typography>
                 </Button>
               ))}
+              <InstallTheAppButton />
             </Box>
           </Toolbar>
         </AppBar>
