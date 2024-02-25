@@ -14,11 +14,11 @@ function InstallTheAppButton() {
     window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
       setInstallPrompt(event);
-      setIsInstallable(false);
       if (!installPrompt) {
         setButtonLabel("المتصفح لا يدعم تثبيت التطبيق");
         return;
       }
+      setIsInstallable(false);
       setButtonLabel("تثبيت التطبيق");
     });
   }, []);
