@@ -6,20 +6,22 @@ import GetAppRoundedIcon from "@mui/icons-material/GetAppRounded";
 
 function InstallTheAppButton() {
   // Variables:
-  const [isInstallable, setIsInstallable] = useState(true);
+  const [isInstallable, setIsInstallable] = useState(false);
   const [installPrompt, setInstallPrompt] = useState();
-  const [buttonLabel, setButtonLabel] = useState("التطبيق مُثبّت");
 
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (event) => {
       event.preventDefault();
       setInstallPrompt(event);
-      if (!installPrompt) {
-        setButtonLabel("المتصفح لا يدعم تثبيت التطبيق");
+      if (!event) {
         return;
+      } else {
+        setIsInstallable(true);
       }
-      setIsInstallable(false);
-      setButtonLabel("تثبيت التطبيق");
+    });
+
+    window.addEventListener("appinstalled", () => {
+      disableInAppInstallPrompt();
     });
   }, []);
 
@@ -27,28 +29,25 @@ function InstallTheAppButton() {
   const handleInstall = () => {
     installPrompt.prompt();
 
-    // Wait for the user's choice
-    deferredPrompt.userChoice.then((choiceResult) => {
-      if (choiceResult.outcome === "accepted") {
-        setButtonLabel("التطبيق مًثبّت");
-      }
-    });
     disableInAppInstallPrompt();
   };
 
   const disableInAppInstallPrompt = () => {
     setInstallPrompt(null);
-    setIsInstallable(true);
+    setIsInstallable(false);
   };
   return (
-    <Button
-      onClick={handleInstall}
-      variant="contained"
-      startIcon={<GetAppRoundedIcon />}
-      disabled={isInstallable}
-    >
-      {buttonLabel}
-    </Button>
+    <>
+      {isInstallable ? (
+        <Button
+          onClick={handleInstall}
+          variant="contained"
+          startIcon={<GetAppRoundedIcon />}
+        >
+          تثبيت التطبيق
+        </Button>
+      ) : null}
+    </>
   );
 }
 
