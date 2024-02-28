@@ -26,9 +26,8 @@ function InstallTheAppButton() {
   }, []);
 
   // Handlers:
-  const handleInstall = () => {
-    installPrompt.prompt();
-
+  const handleInstall = async () => {
+    await installPrompt.prompt();
     disableInAppInstallPrompt();
   };
 
