@@ -6,8 +6,6 @@ function adjustmentStocks() {
   const { allStocks, heirsOfFard, editHeirsOfFard, amount } =
     useStore.getState();
 
-  console.log(heirsOfFard);
-  console.log(allStocks);
   const newA = heirsOfFard.map((heir) => {
     return {
       ...heir,
