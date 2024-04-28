@@ -32,8 +32,8 @@ function ReportProblem() {
   const heirsOfConsanguinity = useStore((state) => state.heirsOfConsanguinity);
   const closeReportForm = useStore((state) => state.closeReportForm);
   const resetContactFormData = useStore((state) => state.resetContactFormData);
-  const api = process.env.Contact_Form_API;
-  const captchaKey = process.env.HCaptcha_Site_Key;
+  const api = process.env.NEXT_PUBLIC_Contact_Form_API;
+  const captchaKey = process.NEXT_PUBLIC_env.HCaptcha_Site_Key;
   const [token, setToken] = useState("");
   const setIsNotificationDialogOpen = useStore(
     (state) => state.setIsNotificationDialogOpen

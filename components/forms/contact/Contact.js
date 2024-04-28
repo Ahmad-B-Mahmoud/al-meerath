@@ -26,8 +26,8 @@ function Contact() {
   const email = useStore((state) => state.email);
   const bodyText = useStore((state) => state.bodyText);
   const resetContactFormData = useStore((state) => state.resetContactFormData);
-  const api = process.env.Contact_Form_API;
-  const captchaKey = process.env.HCaptcha_Site_Key;
+  const api = process.env.NEXT_PUBLIC_Contact_Form_API;
+  const captchaKey = process.env.NEXT_PUBLIC_HCaptcha_Site_Key;
   const [token, setToken] = useState("");
   const setIsNotificationDialogOpen = useStore(
     (state) => state.setIsNotificationDialogOpen
