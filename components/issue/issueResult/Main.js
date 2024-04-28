@@ -4,10 +4,12 @@ import { Container, Box, Typography } from "@mui/material";
 import Info from "./Info";
 import HeirsOfConsanguinity from "./HeirsOfConsanguinity";
 import ResultActions from "./ResultActions";
+
 function Main() {
   return (
     <>
       <Container maxWidth="lg" className="glass-background">
+        <ResultActions />
         <Box id="printable-content">
           <Typography
             variant="h3"
@@ -20,7 +22,6 @@ function Main() {
             نتيجة حلّ المسألة
           </Typography>
           <Info />
-          <ResultActions />
           <HeirsOfFard />
           <HeirsOfConsanguinity />
         </Box>

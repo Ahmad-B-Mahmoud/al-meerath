@@ -39,6 +39,8 @@ import { paternalCousins } from "./slices/issue/step_05/paternalCousins";
 import { resultSlice } from "./slices/issue/result";
 // Contact Form:
 import { contactForm } from "./slices/forms/contact";
+import { notification } from "./slices/forms/notification";
+import { reportProblem } from "./slices/forms/reportProblem";
 
 const useStore = create((set) => ({
   // Steps Slice:
@@ -90,6 +92,10 @@ const useStore = create((set) => ({
   /** Forms: */
   // Contact Form:
   ...contactForm(set),
+  // Report a problem Form:
+  ...reportProblem(set),
+  // Notification:
+  ...notification(set),
 }));
 
 export default useStore;

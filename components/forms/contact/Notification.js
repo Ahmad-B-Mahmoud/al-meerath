@@ -23,7 +23,7 @@ function Notification() {
       <Alert
         onClose={handleClose}
         severity={notificationSeverity}
-        variant="filled"
+        variant="outlined"
         sx={{ width: "100%" }}
       >
         {notificationMessage}
