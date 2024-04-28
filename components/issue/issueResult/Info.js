@@ -26,32 +26,32 @@ function Info() {
     >
       <Grid>
         <Chip
-          color="primary"
           label={`قيمة التركة ${amount}`}
           icon={<PaidRoundedIcon />}
+          variant="outlined"
         />
       </Grid>
       <Grid>
         <Chip
-          color="primary"
           label={`المذهب الفقهي ${creed}`}
           icon={<AssistantDirectionRoundedIcon />}
+          variant="outlined"
         />
       </Grid>
       <Grid>
         <Chip
-          color="primary"
           label={`نوع المسألة ${issueType}`}
           icon={<SquareFootIcon />}
+          variant="outlined"
         />
       </Grid>
       <Grid>
         <Chip
-          color="primary"
           label={`أصل المسألة ${
             issueType === "عائلة" || issueType === "رديّة" ? allStocks : 24
           }`}
           icon={<PieChartIcon />}
+          variant="outlined"
         />
       </Grid>
       {issueNote != "" ? (

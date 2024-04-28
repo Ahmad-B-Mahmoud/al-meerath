@@ -39,7 +39,6 @@ function HeirsOfFard() {
         color="primary"
         fontWeight="bold"
         gutterBottom
-        textAlign="center"
         sx={{ textShadow: "2px 2px #000" }}
       >
         الورثة من أصحاب الفروض

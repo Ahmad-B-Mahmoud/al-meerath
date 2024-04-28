@@ -30,7 +30,6 @@ function HeirsOfConsanguinity() {
         color="primary"
         fontWeight="bold"
         gutterBottom
-        textAlign="center"
         sx={{ textShadow: "2px 2px #000" }}
       >
         الورثة من أصحاب العصبات
@@ -39,8 +38,8 @@ function HeirsOfConsanguinity() {
         <Typography
           variant="h6"
           fontWeight="bold"
-          textAlign="center"
           gutterBottom
+          marginBottom={4}
         >
           لا يوجد ورثة من أصحاب العصبات.
         </Typography>
