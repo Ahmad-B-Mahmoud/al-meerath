@@ -5,8 +5,8 @@ const withPWA = require("@ducanh2912/next-pwa").default({
 });
 const nextConfig = {
   env: {
-    Contact_Form_API: process.env.Contact_Form_API,
-    HCaptcha_Site_Key: process.env.HCaptcha_Site_Key,
+    NEXT_PUBLIC_Contact_Form_API: process.env.NEXT_PUBLIC_Contact_Form_API,
+    NEXT_PUBLIC_HCaptcha_Site_Key: process.env.NEXT_PUBLIC_HCaptcha_Site_Key,
   },
 };
 
