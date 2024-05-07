@@ -41,7 +41,7 @@ function Home() {
                 <Typography
                   variant="h1"
                   color="primary"
-                  sx={{ textShadow: "2px 2px #000", pt: 4 }}
+                  sx={{ textShadow: "2px 2px #000" }}
                 >
                   الميراث
                 </Typography>
