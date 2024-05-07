@@ -21,7 +21,7 @@ function NotesAboutTheApp() {
             placeholder="blur"
           />
           <CardContent>
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+            <Typography variant="body">
               هذا التطبيق يعمل على المتصفح الخاص بمستخدم التطبيق و لا يُخزن أي
               من بيانات حلّ المسألة.
             </Typography>
@@ -43,7 +43,7 @@ function NotesAboutTheApp() {
             placeholder="blur"
           />
           <CardContent>
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+            <Typography variant="body">
               التطبيق يعمل دون الحاجة للإتصال بالإنترنيت بعد فتح موقع التطبيق أو
               تثبيته لأول مرة.
             </Typography>
@@ -65,7 +65,7 @@ function NotesAboutTheApp() {
             placeholder="blur"
           />
           <CardContent>
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+            <Typography variant="body">
               التطبيق هدفه تسهيل حلّ مسائل المواريث لإخوتي و أخواتي المسلمين و
               ليس للربح الماديّ.
             </Typography>

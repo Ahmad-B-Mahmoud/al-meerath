@@ -32,10 +32,7 @@ function HeirsSection() {
                 أصحاب الفروض: هم الورثة الذين قدّرت لهم الشريّعة أنصبة معينة في
                 التركة
               </Typography>
-              <Typography
-                variant="body"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
-              >
+              <Typography variant="body" sx={{ lineHeight: 2 }}>
                 <ul>
                   <li>الأب</li>
                   <li>الأم</li>

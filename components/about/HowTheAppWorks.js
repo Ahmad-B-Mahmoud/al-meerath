@@ -29,7 +29,7 @@ function HowTheAppWorks() {
             >
               طريقة عمل التطبيق
             </Typography>
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+            <Typography variant="body">
               تطبيق المواريث يعمل على حلّ المسألة عن طريق تبسيط معطيات المسألة
               لعدّة خطوات تبدأ بمعلومات عامة عن التركة و من ثمّ إختيار الورثة
               حيث يكون إختيارهم حسب قربهم للمتوفى أو المتوفاة و الترتيب يماثل
@@ -40,7 +40,7 @@ function HowTheAppWorks() {
               و الأعمام و أبناء الأعمام.
             </Typography>
             <br />
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+            <Typography variant="body">
               و عند إختيار أحد الورثة سيحُجب الوريث المُتأثر بذاك الوريث
               المُختار، وعملية إختيار الورثة سوف تتوقف عند إكتمال الورثة
               المحتملين.

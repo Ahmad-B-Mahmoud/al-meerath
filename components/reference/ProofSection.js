@@ -27,7 +27,7 @@ function ProofSection() {
                 variant="h5"
                 color="primary"
                 fontWeight="bold"
-                sx={{ textShadow: "2px 2px #000", pt: 2 }}
+                sx={{ pt: 2 }}
               >
                 الآيات القرآنية التي تحدثت عن أحكام المواريث
               </Typography>
@@ -41,7 +41,7 @@ function ProofSection() {
               <Typography
                 variant="body"
                 className="quran-font"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
+                sx={{ lineHeight: 2 }}
               >
                 بسم اللّه الرحمن الرّحيم: ‏‏‏‏‏ ‏‏ ‏ ‏‏‏‏‏‏‏
                 ‏‏‏‏ ‏‏‏ ‏‏ ‏‏‏‏‏‏‏ ‏‏‏ ‏‏ ‏‏‏‏ ‏‏‏
@@ -65,7 +65,7 @@ function ProofSection() {
               <Typography
                 variant="body"
                 className="quran-font"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
+                sx={{ lineHeight: 2 }}
               >
                 بسم اللّه الرحمن الرّحيم: ‏‏‏‏ ‏‏‏ ‏‏ ‏‏‏
                 ‏‏‏‏‏‏‏ ‏‏ ‏‏ ‏‏‏ ‏‏‏ ‏‏‏ ‏‏‏ ‏‏ ‏‏‏
@@ -90,7 +90,7 @@ function ProofSection() {
               <Typography
                 variant="body"
                 className="quran-font"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
+                sx={{ lineHeight: 2 }}
               >
                 بسم اللّه الرحمن الرّحيم: ‏‏‏‏‏‏‏ ‏‏ ‏‏ ‏‏‏‏‏‏
                 ‏ ‏‏‏‏‏‏‏ ‏‏ ‏‏‏‏‏‏ ‏‏‏ ‏‏ ‏‏ ‏‏ ‏‏‏
@@ -140,7 +140,7 @@ function ProofSection() {
               <Typography
                 variant="body"
                 className="quran-font"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
+                sx={{ lineHeight: 2 }}
               >
                 عَنِ ابْنِ عَبَّاسٍ رَضِيَ اللَّهُ عَنْهُمَا قَالَ: قَالَ
                 رَسُولُ اللَّهِ ﷺ: أَلْحِقُوا الْفَرَائِضَ بِأَهْلِهَا، فَمَا
@@ -156,7 +156,7 @@ function ProofSection() {
               <Typography
                 variant="body"
                 className="quran-font"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
+                sx={{ lineHeight: 2 }}
               >
                 وَعَنِ ابْنِ مَسْعُودٍ  فِي بِنْتٍ، وَبِنْتِ ابْنٍ، وَأُخْتٍ،
                 قَضَى النَّبِيُّ ﷺ: لِلِابْنَةِ النِّصْف، وَلِابْنَةِ الِابْنِ
@@ -173,7 +173,7 @@ function ProofSection() {
               <Typography
                 variant="body"
                 className="quran-font"
-                sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
+                sx={{ lineHeight: 2 }}
               >
                 وَعَنِ ابْنِ بُرَيْدَةَ، عَنْ أَبِيهِ: أَنَّ النَّبِيَّ ﷺ جَعَلَ
                 لِلْجَدَّةِ السُّدُسَ إِذَا لَمْ يَكُنْ دُونَهَا أُمٌّ. رَوَاهُ
