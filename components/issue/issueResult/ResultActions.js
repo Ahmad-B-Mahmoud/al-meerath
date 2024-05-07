@@ -1,8 +1,10 @@
 "use client";
 import * as React from "react";
-import { Box, ButtonGroup, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
+import Grid from "@mui/material/Unstable_Grid2"; // Grid version 2
 import SaveIcon from "@mui/icons-material/Save";
+import PrintIcon from "@mui/icons-material/Print";
 import * as htmlToImage from "html-to-image";
 import resetIssueStore from "@/utils/resetIssueStore";
 import { useRouter } from "next/navigation";
@@ -11,10 +13,11 @@ import AnnouncementIcon from "@mui/icons-material/Announcement";
 import useStore from "@/store";
 import ReportProblem from "@/components/forms/reportProblem/ReportProblem";
 
-export default function ResultActions() {
+export default function ResultActions({ printableContent }) {
   // Variables:
   const router = useRouter();
   const [saveBtnLoading, setSaveBtnLoading] = React.useState(false);
+  const [printBtnLoading, setPrintBtnLoading] = React.useState(false);
   const [newBtnLoading, setNewBtnLoading] = React.useState(false);
   const openReportForm = useStore((state) => state.openReportForm);
 
@@ -46,40 +49,58 @@ export default function ResultActions() {
     setNewBtnLoading(false);
   };
 
+  const handlePrint = () => {
+    setPrintBtnLoading(true);
+    window.print();
+    setPrintBtnLoading(false);
+  };
+
   return (
     <>
-      <Box sx={{ display: "flex", justifyContent: "flex-end", paddingTop: 5 }}>
-        <ButtonGroup variant="contained" aria-label="Result button Group tool.">
+      <Grid container spacing={2} justifyContent="center" sx={{ mt: 3 }}>
+        <Grid>
           <LoadingButton
             onClick={handleSavePng}
             loading={saveBtnLoading}
             loadingPosition="start"
-            variant="text"
+            variant="outlined"
             startIcon={<SaveIcon />}
-            size="small"
           >
             حفظ كصورة
           </LoadingButton>
-          <Button
-            onClick={handleReportProblem}
-            variant="text"
-            startIcon={<AnnouncementIcon />}
-            size="small"
+        </Grid>
+        <Grid>
+          <LoadingButton
+            onClick={handlePrint}
+            loading={printBtnLoading}
+            loadingPosition="start"
+            variant="outlined"
+            startIcon={<PrintIcon />}
           >
-            إبلاغ عن خطأ في حلّ المسألة
-          </Button>
+            طباعة
+          </LoadingButton>
+        </Grid>
+        <Grid>
           <LoadingButton
             onClick={handleNewIssue}
             loading={newBtnLoading}
             loadingPosition="start"
-            variant="text"
+            variant="outlined"
             startIcon={<CalculateIcon />}
-            size="small"
           >
             بدء مسألة جديدة
           </LoadingButton>
-        </ButtonGroup>
-      </Box>
+        </Grid>
+        <Grid>
+          <Button
+            onClick={handleReportProblem}
+            variant="outlined"
+            startIcon={<AnnouncementIcon />}
+          >
+            إبلاغ عن خطأ في حلّ المسألة
+          </Button>
+        </Grid>
+      </Grid>
       <ReportProblem />
     </>
   );

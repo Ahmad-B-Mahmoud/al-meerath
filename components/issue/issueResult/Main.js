@@ -8,16 +8,15 @@ import ResultActions from "./ResultActions";
 function Main() {
   return (
     <>
-      <Container maxWidth="lg" className="glass-background">
-        <ResultActions />
-        <Box id="printable-content">
+      <Container maxWidth="lg" className="glass-background" sx={{ py: 6 }}>
+        <Box id="printable-content" sx={{ px: 1 }}>
           <Typography
             variant="h3"
             color="primary"
             fontWeight="bold"
             gutterBottom
             textAlign="center"
-            sx={{ textShadow: "2px 2px #000", pt: 6 }}
+            sx={{ textShadow: "2px 2px #000" }}
           >
             نتيجة حلّ المسألة
           </Typography>
@@ -25,6 +24,7 @@ function Main() {
           <HeirsOfFard />
           <HeirsOfConsanguinity />
         </Box>
+        <ResultActions />
       </Container>
     </>
   );
