@@ -1,10 +1,17 @@
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 import islamic_todo from "@/public/images/reference/islamic_todo.webp";
 import Image from "next/image";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import { TimelineOppositeContent } from "@mui/lab";
 
 function TermsSection() {
   return (
-    <Grid container>
+    <Grid container alignItems="center">
       <Grid item sm={5}>
         <Image
           src={islamic_todo}
@@ -33,30 +40,108 @@ function TermsSection() {
               variant="body"
               sx={{ lineHeight: 2, textShadow: "2px 2px #000" }}
             >
-              <ul>
-                <li>
-                  أولاً: تجهيز الميت: المراد به نفقات الغسل و التكفين و الحمل و
-                  الدفن.
-                </li>
-                <li>
-                  ثانياً: الديون العينية: والمراد منها الديون التي تتعلق بعين من
-                  أعيان التركة قبل وفاة المورث كما لو رهن الميت شيئاً من عقاراته
-                  في دين عليه مقدم في الأداء من هذا الشئ المرهون.
-                </li>
-                <li>
-                  ثالثاً: الديون العادية: و هذه نوعان(ديون اللّه و ديون العباد)
-                  و الأول مثل الزكاة و النذور و الكفارات و الثانية كالقرض و
-                  المهر.
-                </li>
-                <li>
-                  رابعاً: الوصية: تأتي بعد الدين وقبل الإرث و الوصية تُنفذ في
-                  حدود الثُلث.
-                </li>
-                <li>
-                  خامساً: حق الورثة: يُقسم الباقي بعد أداء الحقوق السابقة على
-                  الورثة حسب أنصيبتهم الشرعيّة.
-                </li>
-              </ul>
+              <Timeline position="alternate">
+                <TimelineItem>
+                  <TimelineOppositeContent>
+                    <Typography variant="h6" component="span">
+                      أولاً
+                    </Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot color="primary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      تجهيز الميّت
+                    </Typography>
+                    <Typography>
+                      المراد به نفقات الغسل و التكفين و الحمل و الدفن.
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent>
+                    <Typography variant="h6" component="span">
+                      ثانياً
+                    </Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot color="primary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      الديون العينية
+                    </Typography>
+                    <Typography>
+                      والمراد منها الديون التي تتعلق بعين من أعيان التركة قبل
+                      وفاة المورث كما لو رهن الميت شيئاً من عقاراته في دين عليه
+                      مقدم في الأداء من هذا الشئ المرهون.
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent>
+                    <Typography variant="h6" component="span">
+                      ثالثاً
+                    </Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot color="primary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      الديون العادية
+                    </Typography>
+                    <Typography>وهذه الديون نوعان:</Typography>
+                    <Typography>
+                      ديون اللّه: مثل الزكاة و النذور و الكفارات.
+                    </Typography>
+                    <Typography>ديون العباد: مثل القرض و المهر.</Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent>
+                    <Typography variant="h6" component="span">
+                      رابعاً
+                    </Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot color="primary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      الوصية
+                    </Typography>
+                    <Typography>
+                      تأتي بعد الدين وقبل الإرث و الوصية تُنفذ في حدود الثُلث.
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent>
+                    <Typography variant="h6" component="span">
+                      خامساً
+                    </Typography>
+                  </TimelineOppositeContent>
+                  <TimelineSeparator>
+                    <TimelineDot color="primary" />
+                    <TimelineConnector />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <Typography variant="h6" component="span">
+                      حق الورثة
+                    </Typography>
+                    <Typography>
+                      يُقسم الباقي بعد أداء الحقوق السابقة على الورثة حسب
+                      أنصبتهم الشرعيّة.
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+              </Timeline>
             </Typography>
           </CardContent>
         </Card>

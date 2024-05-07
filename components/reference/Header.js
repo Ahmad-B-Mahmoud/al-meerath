@@ -29,19 +29,27 @@ function Header() {
             >
               مقدمة عن علم المواريث
             </Typography>
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+            <Typography
+              variant="body"
+              component="p"
+              sx={{ textShadow: "2px 2px #000" }}
+            >
               هو العلم بالقواعد و الضوابط الفقهية و الحسابية التي يُعرف بها نصيب
               كل وارث ممن يخلفون الميت في تركته، و يُعرف أيضاً بعلم الفرائض.
             </Typography>
-            <br />
-            <Typography variant="body" sx={{ textShadow: "2px 2px #000" }}>
+
+            <Typography
+              variant="body"
+              component="p"
+              sx={{ textShadow: "2px 2px #000", my: 1 }}
+            >
               و قد إهتمّ القرآن الكريم بهذا العلم فبيّن معظم أحكامه تفصيلّياً، و
               إهتم سيدنا محمد رسول اللّه صلّى اللّه عليه و سلّم بهذا العلم
               إهتماماً كبيراً و إعتنى به صحابته من بعده.
             </Typography>
-            <br />
             <Typography
               variant="body"
+              component="p"
               className="quran-font"
               sx={{ textShadow: "2px 2px #000" }}
             >
