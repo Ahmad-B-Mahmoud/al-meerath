@@ -7,6 +7,7 @@ import {
   Step,
   Typography,
   Divider,
+  Button,
 } from "@mui/material";
 import useStore from "@/store";
 import Step_01 from "./step_01/Step_01";
@@ -15,10 +16,19 @@ import Step_03 from "./step_03/Step_03";
 import Step_04 from "./step_04/Step_04";
 import Step_05 from "./step_05/Step_05";
 import LastStep from "./lastStep/LastStep";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
+import { useRouter } from "next/navigation";
 
 function MainStep() {
   // Variables:
   const activeStep = useStore((state) => state.steps);
+  const router = useRouter();
+
+  // Handlers:
+  const handleRefClick = () => {
+    router.push("/reference");
+  };
+
   return (
     <>
       <Container maxWidth="sm" className="glass-background">
@@ -36,6 +46,18 @@ function MainStep() {
           <Typography variant="h6" gutterBottom>
             سيتم إختيار الوارثين من أصحاب الفروض و العصبات على شكل خطوات بحسب
             قربهم و صلتهم بالمتوفى.
+          </Typography>
+          <Typography>
+            كما يمكنك مراجعة
+            <Button
+              onClick={handleRefClick}
+              startIcon={<AutoStoriesIcon />}
+              variant="text"
+              size="large"
+            >
+              دليل المواريث
+            </Button>
+            قبل البدء
           </Typography>
           <Divider sx={{ marginBottom: 4 }} />
           <Stepper activeStep={activeStep} orientation="vertical">
