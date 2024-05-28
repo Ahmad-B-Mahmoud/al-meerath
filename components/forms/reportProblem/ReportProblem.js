@@ -118,6 +118,9 @@ function ReportProblem() {
       open={reportForm}
       onClose={handleClose}
       className="glass-background"
+      PaperProps={{
+        className: "no-background",
+      }}
     >
       <DialogTitle
         color="primary"

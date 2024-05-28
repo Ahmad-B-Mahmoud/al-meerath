@@ -108,6 +108,9 @@ function Contact() {
       open={contactForm}
       onClose={handleClose}
       className="glass-background"
+      PaperProps={{
+        className: "no-background",
+      }}
     >
       <DialogTitle
         color="primary"
@@ -137,6 +140,7 @@ function Contact() {
           onVerify={onVerify}
           theme="dark"
           languageOverride="ar"
+          size="compact"
         />
       </DialogContent>
       <DialogActions sx={{ justifyContent: "center" }}>
